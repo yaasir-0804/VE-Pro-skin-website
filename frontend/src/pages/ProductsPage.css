@@ -72,6 +72,27 @@
   color: var(--text-secondary);
 }
 
+/* Coming Soon Styles */
+.coming-soon-card {
+  opacity: 0.95;
+  cursor: default;
+}
+
+.coming-soon-card:hover {
+  transform: none;
+}
+
+.coming-soon-badge {
+  background: var(--accent-warm) !important;
+}
+
+.coming-soon-text {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+}
+
 @media (max-width: 640px) {
   .filters-section {
     padding: 20px;
