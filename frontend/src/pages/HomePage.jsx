@@ -10,11 +10,20 @@ const HomePage = () => {
   return (
     <div className="home-page">
       {/* Hero Section */}
-      <section className="hero-section">
+      <section className="hero-section hero-with-background">
+        <div className="hero-background-image" style={{
+          backgroundImage: 'url(https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/vtpho5gb_WhatsApp%20Image%202026-01-13%20at%207.27.45%20PM.jpeg)',
+        }}></div>
+        <div className="hero-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <h1 className="hero-large">Clinical Skincare.<br />Visible Results.</h1>
-            <p className="body-large" style={{ maxWidth: '560px', marginTop: '24px', color: 'var(--text-secondary)' }}>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/eyltu4ao_WhatsApp%20Image%202026-01-13%20at%205.32.44%20PM.jpeg" 
+              alt="VÉ PRO SKIN" 
+              className="hero-logo"
+            />
+            <h1 className="hero-large" style={{ marginTop: '32px', color: '#1a1a1a' }}>Clinical Skincare.<br />Visible Results.</h1>
+            <p className="body-large" style={{ maxWidth: '560px', marginTop: '24px', color: '#4a4a4a' }}>
               Dermo-tested, cruelty-free formulas for acne, glow & barrier repair — made for Indian skin.
             </p>
             

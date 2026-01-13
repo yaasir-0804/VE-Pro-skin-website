@@ -19,6 +19,13 @@
   color: var(--text-primary);
   text-decoration: none;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
 }
 
 .navigation-menu {

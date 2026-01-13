@@ -25,6 +25,12 @@
   margin: 0 0 8px 0;
 }
 
+.footer-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 16px;
+}
+
 .footer-text {
   font-size: 14px;
   line-height: 1.6;
