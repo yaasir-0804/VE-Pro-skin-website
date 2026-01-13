@@ -84,11 +84,14 @@ const HomePage = () => {
           <div className="product-grid">
             {bestSellers.map((product) => (
               <Link 
-                to={`/product/${product.id}`} 
+                to={product.comingSoon ? '#' : `/product/${product.id}`}
                 key={product.id}
-                className="product-card hover-lift"
+                className={`product-card hover-lift ${product.comingSoon ? 'coming-soon-card' : ''}`}
+                onClick={(e) => product.comingSoon && e.preventDefault()}
               >
-                <div className="product-badge">{product.badge}</div>
+                <div className={`product-badge ${product.comingSoon ? 'coming-soon-badge' : ''}`}>
+                  {product.badge}
+                </div>
                 <img src={product.image} alt={product.name} className="product-card-image" />
                 
                 <div className="product-card-body">
@@ -103,18 +106,33 @@ const HomePage = () => {
                     {product.benefits.slice(0, 2).join(' • ')}
                   </div>
                   
-                  <div className="product-rating">
-                    <Star size={14} fill="var(--text-primary)" />
-                    <span className="body-small">{product.rating} ({product.reviews} reviews)</span>
-                  </div>
+                  {!product.comingSoon && (
+                    <>
+                      <div className="product-rating">
+                        <Star size={14} fill="var(--text-primary)" />
+                        <span className="body-small">{product.rating} ({product.reviews} reviews)</span>
+                      </div>
+                      
+                      <div className="product-pricing">
+                        <span className="original-price">₹{product.originalPrice}</span>
+                        <span className="current-price">₹{product.price}</span>
+                        <span className="discount-badge">{product.discount}% Off</span>
+                      </div>
+                      
+                      <div className="product-stock body-small">Only {product.stock} left in stock</div>
+                    </>
+                  )}
                   
-                  <div className="product-pricing">
-                    <span className="original-price">₹{product.originalPrice}</span>
-                    <span className="current-price">₹{product.price}</span>
-                    <span className="discount-badge">{product.discount}% Off</span>
-                  </div>
-                  
-                  <div className="product-stock body-small">Only {product.stock} left in stock</div>
+                  {product.comingSoon && (
+                    <div className="coming-soon-text">
+                      <p className="body-regular" style={{ color: 'var(--accent-warm)', fontWeight: '500' }}>
+                        Launching Soon
+                      </p>
+                      <p className="body-small" style={{ color: 'var(--text-secondary)' }}>
+                        Be the first to know when it's available
+                      </p>
+                    </div>
+                  )}
                 </div>
               </Link>
             ))}
