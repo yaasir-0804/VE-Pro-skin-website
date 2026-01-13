@@ -49,7 +49,7 @@ Why you'll love it:
 • Improves skin texture
 • Maintains oil-water balance
 • Strengthens skin barrier`,
-    image: 'https://images.unsplash.com/photo-1570554886111-e80fcca6a029?w=500',
+    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/k0pdt21d_WhatsApp%20Image%202026-01-13%20at%205.32.41%20PM.jpeg',
     rating: 4.7,
     reviews: 982,
     stock: 45,
@@ -75,7 +75,7 @@ Why you'll love it:
 • Repairs damaged skin barrier
 • Reduces redness & tightness
 • Ideal for sensitive skin`,
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500',
+    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/4h7295q9_WhatsApp%20Image%202026-01-13%20at%205.32.42%20PM%20%281%29.jpeg',
     rating: 4.9,
     reviews: 756,
     stock: 18,

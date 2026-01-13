@@ -9,6 +9,8 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import CartPage from "./pages/CartPage";
 import SkinQuizPage from "./pages/SkinQuizPage";
 import QuizResultsPage from "./pages/QuizResultsPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import OrderSuccessPage from "./pages/OrderSuccessPage";
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
@@ -38,6 +40,8 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="/quiz" element={<SkinQuizPage />} />
           <Route path="/quiz/results" element={<QuizResultsPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/order-success" element={<OrderSuccessPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
