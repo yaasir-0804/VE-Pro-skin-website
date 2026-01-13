@@ -1,0 +1,255 @@
+.product-detail-page {
+  width: 100%;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 32px;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+}
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.product-image-section {
+  position: sticky;
+  top: 100px;
+}
+
+.product-detail-image {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.product-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-meta {
+  display: flex;
+  gap: 16px;
+}
+
+.product-category,
+.product-skin-type {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+}
+
+.product-rating-large {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.product-pricing-large {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.current-price-large {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.original-price-large {
+  font-size: 20px;
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+.discount-badge-large {
+  background: var(--status-error);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 2px;
+}
+
+.urgency-timer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-secondary);
+  padding: 16px 20px;
+  font-size: 14px;
+  border: 1px solid var(--border-subtle);
+}
+
+.timer-display {
+  font-weight: 700;
+  color: var(--status-error);
+  font-size: 16px;
+}
+
+.social-proof-detail {
+  display: flex;
+  gap: 24px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.proof-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+}
+
+.stock-warning {
+  background: rgba(186, 62, 43, 0.1);
+  color: var(--status-error);
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  border-left: 3px solid var(--status-error);
+}
+
+.quantity-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid var(--border-medium);
+}
+
+.qty-btn {
+  background: var(--bg-primary);
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-primary);
+}
+
+.qty-btn:hover {
+  background: var(--bg-secondary);
+}
+
+.qty-display {
+  width: 60px;
+  text-align: center;
+  font-size: 16px;
+  border-left: 1px solid var(--border-medium);
+  border-right: 1px solid var(--border-medium);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  font-size: 16px;
+  padding: 20px;
+  height: auto;
+}
+
+.product-section {
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.product-section h3 {
+  margin-bottom: 16px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ingredient-tag {
+  background: var(--bg-secondary);
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefits-list li:before {
+  content: '• ';
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+@media (max-width: 1024px) {
+  .product-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .product-image-section {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-pricing-large {
+    flex-wrap: wrap;
+  }
+
+  .current-price-large {
+    font-size: 24px;
+  }
+
+  .original-price-large {
+    font-size: 16px;
+  }
+
+  .urgency-timer {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .social-proof-detail {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
