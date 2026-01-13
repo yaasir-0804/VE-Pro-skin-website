@@ -23,7 +23,7 @@ Why you'll love it:
 • Helps prevent acne
 • Soothes redness & irritation
 • Non-drying, pH-balanced`,
-    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/xic5eoc9_WhatsApp%20Image%202026-01-13%20at%207.03.58%20PM.jpeg',
+    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/pfuj7n9u_WhatsApp%20Image%202026-01-13%20at%207.13.15%20PM.jpeg',
     rating: 4.8,
     reviews: 1420,
     stock: 27,
@@ -184,7 +184,7 @@ Why you'll love it:
 • Shrinks pores
 • Reduces redness
 • Fades acne marks`,
-    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/ep34dxxr_WhatsApp%20Image%202026-01-13%20at%205.32.43%20PM%20%281%29.jpeg',
+    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/v5g4r44e_WhatsApp%20Image%202026-01-13%20at%207.03.58%20PM%20%286%29.jpeg',
     rating: 4.9,
     reviews: 2876,
     stock: 15,
@@ -211,7 +211,7 @@ Why you'll love it:
 • Reduces dark spots
 • Improves skin tone
 • Protects from free radicals`,
-    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/9r7f9mr7_WhatsApp%20Image%202026-01-13%20at%205.32.43%20PM%20%282%29.jpeg',
+    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/ioqb5fc0_WhatsApp%20Image%202026-01-13%20at%207.03.58%20PM%20%287%29.jpeg',
     rating: 4.8,
     reviews: 2234,
     stock: 29,
@@ -238,7 +238,7 @@ Why you'll love it:
 • Reduces sensitivity
 • Improves hydration
 • Makes skin stronger & healthier`,
-    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/5zuayy26_WhatsApp%20Image%202026-01-13%20at%205.32.43%20PM%20%283%29.jpeg',
+    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/24j375vx_WhatsApp%20Image%202026-01-13%20at%207.03.58%20PM%20%288%29.jpeg',
     rating: 4.9,
     reviews: 1998,
     stock: 21,
@@ -247,7 +247,7 @@ Why you'll love it:
     boughtToday: 489
   },
 
-  // SUNSCREENS - COMING SOON
+  // SUNSCREENS - COMING SOON (No images)
   {
     id: 'sunscreen-oily',
     name: 'Matte Shield Sunscreen SPF 50',
@@ -266,7 +266,7 @@ Why you'll love it:
 • Controls oil & shine
 • No white cast
 • Non-comedogenic`,
-    image: 'https://images.unsplash.com/photo-1556228852-80a9c1e24e1e?w=500',
+    image: '',
     rating: 4.7,
     reviews: 1654,
     stock: 0,
@@ -293,7 +293,7 @@ Why you'll love it:
 • Adds natural glow
 • Hydrating formula
 • No white cast`,
-    image: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=500',
+    image: '',
     rating: 4.8,
     reviews: 1432,
     stock: 0,
@@ -320,7 +320,7 @@ Why you'll love it:
 • Deeply moisturizes
 • Repairs skin barrier
 • Gentle on sensitive skin`,
-    image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500',
+    image: '',
     rating: 4.9,
     reviews: 1287,
     stock: 0,

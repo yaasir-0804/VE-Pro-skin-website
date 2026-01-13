@@ -30,7 +30,7 @@ Why you'll love it:
 • Helps prevent acne
 • Soothes redness & irritation
 • Non-drying, pH-balanced""",
-        "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500",
+        "image": "https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/xic5eoc9_WhatsApp%20Image%202026-01-13%20at%207.03.58%20PM.jpeg",
         "rating": 4.8,
         "reviews": 1420,
         "stock": 27,
@@ -57,7 +57,7 @@ Why you'll love it:
 • Improves skin texture
 • Maintains oil-water balance
 • Strengthens skin barrier""",
-        "image": "https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/k0pdt21d_WhatsApp%20Image%202026-01-13%20at%205.32.41%20PM.jpeg",
+        "image": "https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/xic5eoc9_WhatsApp%20Image%202026-01-13%20at%207.03.58%20PM.jpeg",
         "rating": 4.7,
         "reviews": 982,
         "stock": 45,
@@ -84,7 +84,7 @@ Why you'll love it:
 • Repairs damaged skin barrier
 • Reduces redness & tightness
 • Ideal for sensitive skin""",
-        "image": "https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/4h7295q9_WhatsApp%20Image%202026-01-13%20at%205.32.42%20PM%20%281%29.jpeg",
+        "image": "https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/m7i92rdr_WhatsApp%20Image%202026-01-13%20at%207.03.58%20PM%20%281%29.jpeg",
         "rating": 4.9,
         "reviews": 756,
         "stock": 18,
