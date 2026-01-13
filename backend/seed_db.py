@@ -197,7 +197,7 @@ Why you'll love it:
 • Shrinks pores
 • Reduces redness
 • Fades acne marks""",
-        "image": "https://images.unsplash.com/photo-1620916297811-e5e0d3bffc37?w=500",
+        "image": "https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/ep34dxxr_WhatsApp%20Image%202026-01-13%20at%205.32.43%20PM%20%281%29.jpeg",
         "rating": 4.9,
         "reviews": 2876,
         "stock": 15,
@@ -225,7 +225,7 @@ Why you'll love it:
 • Reduces dark spots
 • Improves skin tone
 • Protects from free radicals""",
-        "image": "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=500",
+        "image": "https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/9r7f9mr7_WhatsApp%20Image%202026-01-13%20at%205.32.43%20PM%20%282%29.jpeg",
         "rating": 4.8,
         "reviews": 2234,
         "stock": 29,
@@ -253,7 +253,7 @@ Why you'll love it:
 • Reduces sensitivity
 • Improves hydration
 • Makes skin stronger & healthier""",
-        "image": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500",
+        "image": "https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/5zuayy26_WhatsApp%20Image%202026-01-13%20at%205.32.43%20PM%20%283%29.jpeg",
         "rating": 4.9,
         "reviews": 1998,
         "stock": 21,
