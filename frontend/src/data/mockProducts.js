@@ -103,7 +103,7 @@ Why you'll love it:
 • Prevents breakouts
 • Minimizes pores
 • Gives matte, fresh look`,
-    image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500',
+    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/wy4723bi_WhatsApp%20Image%202026-01-13%20at%205.32.42%20PM%20%282%29.jpeg',
     rating: 4.8,
     reviews: 2103,
     stock: 32,
@@ -129,7 +129,7 @@ Why you'll love it:
 • Smoothens texture
 • Strengthens skin barrier
 • Gives natural glow`,
-    image: 'https://images.unsplash.com/photo-1617897903246-719242758050?w=500',
+    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/v2dfwbh1_WhatsApp%20Image%202026-01-13%20at%205.32.42%20PM%20%283%29.jpeg',
     rating: 4.7,
     reviews: 1567,
     stock: 41,
@@ -155,7 +155,7 @@ Why you'll love it:
 • Prevents dryness & flaking
 • Calms sensitive skin
 • Long-lasting hydration`,
-    image: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500',
+    image: 'https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/kivn2jol_WhatsApp%20Image%202026-01-13%20at%205.32.43%20PM.jpeg',
     rating: 4.9,
     reviews: 1891,
     stock: 23,
