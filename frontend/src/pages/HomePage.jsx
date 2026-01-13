@@ -54,7 +54,7 @@ const HomePage = () => {
           </h2>
           
           <div className="category-grid">
-            {productCategories.map((category) => (
+            {['Cleanser', 'Moisturiser', 'Serum'].map((category) => (
               <Link 
                 to={`/products?category=${category}`} 
                 key={category}
@@ -67,6 +67,13 @@ const HomePage = () => {
                 <ArrowRight size={20} className="category-arrow" />
               </Link>
             ))}
+            <div className="category-card coming-soon-category">
+              <div className="category-card-content">
+                <h3 className="heading-3">Sunscreen</h3>
+                <p className="body-small" style={{ color: 'var(--accent-warm)', fontWeight: '500' }}>Coming Soon</p>
+              </div>
+              <ArrowRight size={20} className="category-arrow" style={{ opacity: 0.4 }} />
+            </div>
           </div>
         </div>
       </section>

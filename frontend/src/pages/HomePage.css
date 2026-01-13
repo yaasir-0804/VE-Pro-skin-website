@@ -74,6 +74,16 @@
   transform: translateX(4px);
 }
 
+.coming-soon-category {
+  opacity: 0.7;
+  cursor: default;
+  border-style: dashed;
+}
+
+.coming-soon-category:hover {
+  transform: none;
+}
+
 /* Product Grid */
 .product-grid {
   display: grid;
