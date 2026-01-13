@@ -1,33 +1,38 @@
 /* VÉ PRO SKIN - Luxury Minimalist Design System */
 
-/* === Foundation Colors === */
+/* === Foundation Colors - Beauty of Joseon Inspired === */
 :root {
-  /* Primary Backgrounds - Warm foundation */
-  --bg-primary: #fffef2;
-  --bg-secondary: #f6f5e8;
-  --bg-subtle: #ebeade;
+  /* Primary Backgrounds - Warm cream palette */
+  --bg-primary: #f7f3ed;
+  --bg-secondary: #ede8df;
+  --bg-subtle: #e5dfd5;
+  --bg-white: #ffffff;
   
-  /* Text Hierarchy - Rich contrast */
-  --text-primary: #333333;
-  --text-secondary: #666666;
-  --text-light: #bcbbb4;
-  --text-meta: #4a4a4a;
+  /* Text Hierarchy - Rich dark brown tones */
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-light: #8b8680;
+  --text-meta: #6b6660;
   
-  /* Interactive States - Minimal emphasis */
-  --interactive-base: #333333;
-  --interactive-hover: #000000;
-  --focus-outline: #252525;
+  /* Interactive States - Deep brown */
+  --interactive-base: #2b2520;
+  --interactive-hover: #1a1410;
+  --focus-outline: #2b2520;
   
   /* Borders & Separators */
-  --border-light: #bcbbb4;
-  --border-medium: #cccccc;
-  --border-subtle: rgba(51,51,51,0.2);
+  --border-light: #d4cec4;
+  --border-medium: #c4beb4;
+  --border-subtle: rgba(43, 37, 32, 0.15);
+  
+  /* Accent Colors - Warm earthy tones */
+  --accent-warm: #c9a68a;
+  --accent-gold: #d4a574;
   
   /* Functional Colors - Restrained approach */
   --status-error: #ba3e2b;
-  --status-success: #4a4a4a;
-  --status-warning: #666666;
-  --status-info: #333333;
+  --status-success: #4a7c59;
+  --status-warning: #c9a068;
+  --status-info: #6b8da8;
 }
 
 * {

@@ -1,5 +1,5 @@
 // Mock product data for VÉ PRO SKIN
-export const productCategories = ['Cleanser', 'Moisturiser', 'Serum', 'Sunscreen'];
+export const productCategories = ['Cleanser', 'Moisturiser', 'Serum'];
 export const skinTypes = ['Oily / Acne-Prone', 'Normal / Combination', 'Dry / Sensitive'];
 
 export const products = [
@@ -247,7 +247,7 @@ Why you'll love it:
     boughtToday: 489
   },
 
-  // SUNSCREENS
+  // SUNSCREENS - COMING SOON
   {
     id: 'sunscreen-oily',
     name: 'Matte Shield Sunscreen SPF 50',
@@ -269,10 +269,11 @@ Why you'll love it:
     image: 'https://images.unsplash.com/photo-1556228852-80a9c1e24e1e?w=500',
     rating: 4.7,
     reviews: 1654,
-    stock: 38,
-    badge: 'New',
+    stock: 0,
+    badge: 'Coming Soon',
     viewsToday: 56,
-    boughtToday: 378
+    boughtToday: 0,
+    comingSoon: true
   },
   {
     id: 'sunscreen-normal',
@@ -295,10 +296,11 @@ Why you'll love it:
     image: 'https://images.unsplash.com/photo-1571875257727-256c39da42af?w=500',
     rating: 4.8,
     reviews: 1432,
-    stock: 34,
-    badge: 'Best Seller',
+    stock: 0,
+    badge: 'Coming Soon',
     viewsToday: 67,
-    boughtToday: 412
+    boughtToday: 0,
+    comingSoon: true
   },
   {
     id: 'sunscreen-dry',
@@ -321,10 +323,11 @@ Why you'll love it:
     image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500',
     rating: 4.9,
     reviews: 1287,
-    stock: 26,
-    badge: 'Best Seller',
+    stock: 0,
+    badge: 'Coming Soon',
     viewsToday: 61,
-    boughtToday: 395
+    boughtToday: 0,
+    comingSoon: true
   }
 ];
 
