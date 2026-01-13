@@ -99,7 +99,15 @@ const HomePage = () => {
                 <div className={`product-badge ${product.comingSoon ? 'coming-soon-badge' : ''}`}>
                   {product.badge}
                 </div>
-                <img src={product.image} alt={product.name} className="product-card-image" />
+                {product.image ? (
+                  <img src={product.image} alt={product.name} className="product-card-image" />
+                ) : (
+                  <div className="product-card-image-placeholder">
+                    <div className="coming-soon-icon">
+                      <span style={{ fontSize: '48px' }}>⏳</span>
+                    </div>
+                  </div>
+                )}
                 
                 <div className="product-card-body">
                   <div className="product-skin-type body-small">{product.skinType}</div>
