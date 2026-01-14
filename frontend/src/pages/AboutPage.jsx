@@ -10,12 +10,7 @@ const AboutPage = () => {
       <section className="about-hero">
         <div className="container">
           <div className="about-hero-content">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/eyltu4ao_WhatsApp%20Image%202026-01-13%20at%205.32.44%20PM.jpeg" 
-              alt="VÉ PRO SKIN" 
-              className="about-logo"
-            />
-            <h1 className="hero-medium" style={{ marginTop: '32px' }}>Our Story</h1>
+            <h1 className="hero-medium">Our Story</h1>
             <p className="body-large" style={{ marginTop: '16px', maxWidth: '700px' }}>
               This brand was not created in a boardroom.<br />
               It was born in front of a mirror.

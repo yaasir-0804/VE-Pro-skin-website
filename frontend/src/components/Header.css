@@ -23,11 +23,6 @@
   align-items: center;
 }
 
-.logo-image {
-  height: 50px;
-  width: auto;
-}
-
 .navigation-menu {
   display: flex;
   align-items: center;

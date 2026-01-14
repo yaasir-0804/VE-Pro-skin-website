@@ -11,11 +11,7 @@ const Header = ({ cartCount = 0 }) => {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="navigation-logo">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/eyltu4ao_WhatsApp%20Image%202026-01-13%20at%205.32.44%20PM.jpeg" 
-              alt="VÉ PRO SKIN" 
-              className="logo-image"
-            />
+            VÉ PRO SKIN
           </Link>
 
           {/* Desktop Navigation */}

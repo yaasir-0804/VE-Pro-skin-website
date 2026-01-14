@@ -12,6 +12,7 @@ import QuizResultsPage from "./pages/QuizResultsPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import OrderSuccessPage from "./pages/OrderSuccessPage";
 import AboutPage from "./pages/AboutPage";
+import CampaignThankYouPage from "./pages/CampaignThankYouPage";
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
@@ -44,6 +45,7 @@ function App() {
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/order-success" element={<OrderSuccessPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/campaign-thank-you" element={<CampaignThankYouPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

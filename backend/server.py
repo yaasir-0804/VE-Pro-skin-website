@@ -7,7 +7,7 @@ import logging
 from pathlib import Path
 
 # Import routes
-from routes import products, orders, quiz
+from routes import products, orders, quiz, campaign
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -32,6 +32,7 @@ async def root():
 api_router.include_router(products.router)
 api_router.include_router(orders.router)
 api_router.include_router(quiz.router)
+api_router.include_router(campaign.router)
 
 # Include the api router in the main app
 app.include_router(api_router)

@@ -8,11 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-section">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_luxskin-builder/artifacts/eyltu4ao_WhatsApp%20Image%202026-01-13%20at%205.32.44%20PM.jpeg" 
-              alt="VÉ PRO SKIN" 
-              className="footer-logo"
-            />
+            <h3 className="footer-heading">VÉ PRO SKIN</h3>
             <p className="footer-text">
               Clinical skincare with visible results. Dermo-tested, cruelty-free formulas made for Indian skin.
             </p>

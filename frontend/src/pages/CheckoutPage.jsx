@@ -69,77 +69,24 @@ const CheckoutPage = () => {
     setLoading(true);
 
     try {
-      // Load Razorpay script
-      const scriptLoaded = await loadRazorpayScript();
-      if (!scriptLoaded) {
-        alert('Razorpay SDK failed to load. Please check your connection.');
-        setLoading(false);
-        return;
-      }
-
-      // Create order
-      const orderResponse = await axios.post(`${API}/orders/create`, {
-        amount: total,
+      // Submit to pre-launch campaign
+      const campaignResponse = await axios.post(`${API}/campaign/submit`, {
         customer: formData,
-        items: cartItems
+        items: cartItems,
+        total_amount: total
       });
 
-      const { razorpay_order_id, amount, currency, key_id } = orderResponse.data;
-
-      // Razorpay options
-      const options = {
-        key: key_id,
-        amount: amount,
-        currency: currency,
-        name: 'VÉ PRO SKIN',
-        description: 'Clinical Skincare Products',
-        order_id: razorpay_order_id,
-        handler: async function (response) {
-          try {
-            // Verify payment
-            const verifyResponse = await axios.post(`${API}/orders/verify`, {
-              razorpay_order_id: response.razorpay_order_id,
-              razorpay_payment_id: response.razorpay_payment_id,
-              razorpay_signature: response.razorpay_signature,
-              customer: formData,
-              items: cartItems
-            });
-
-            if (verifyResponse.data.success) {
-              // Clear cart
-              localStorage.removeItem('cart');
-              window.dispatchEvent(new Event('cartUpdated'));
-              
-              // Redirect to success page
-              navigate(`/order-success?order_id=${verifyResponse.data.order_id}`);
-            }
-          } catch (error) {
-            console.error('Payment verification error:', error);
-            alert('Payment verification failed. Please contact support.');
-          }
-        },
-        prefill: {
-          name: formData.name,
-          email: formData.email,
-          contact: formData.phone
-        },
-        theme: {
-          color: '#2b2520'
-        },
-        modal: {
-          ondismiss: function() {
-            setLoading(false);
-          }
-        }
-      };
-
-      const razorpayInstance = new window.Razorpay(options);
-      razorpayInstance.open();
-      setLoading(false);
-
+      if (campaignResponse.data.success) {
+        // Clear cart
+        localStorage.removeItem('cart');
+        window.dispatchEvent(new Event('cartUpdated'));
+        
+        // Redirect to campaign thank you page
+        navigate(`/campaign-thank-you?code=${campaignResponse.data.discount_code}`);
+      }
     } catch (error) {
-      console.error('Payment error:', error);
-      alert('Failed to initiate payment. Please try again.');
+      console.error('Campaign submission error:', error);
+      alert('Something went wrong. Please try again.');
       setLoading(false);
     }
   };
