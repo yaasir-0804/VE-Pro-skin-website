@@ -1,6 +1,3 @@
-app.get("/", (req, res) => {
-  res.send("VE Pro Skin Backend is Live 🚀");
-});
 
 import express from "express";
 import cors from "cors";
