@@ -46,3 +46,45 @@ app.post("/api/lead", async (req, res) => {
 app.listen(10000, () => {
   console.log("VE Pro Skin backend running");
 });
+app.post("/api/campaign/submit", async (req, res) => {
+  const { customer, items, total_amount } = req.body;
+
+  try {
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
+      }
+    });
+
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
+      subject: "🔥 New VE Pro Skin Campaign Lead",
+      html: `
+        <h2>New Customer</h2>
+        <p><b>Name:</b> ${customer.name}</p>
+        <p><b>Email:</b> ${customer.email}</p>
+        <p><b>Phone:</b> ${customer.phone}</p>
+        <p><b>Address:</b> ${customer.address}, ${customer.city}, ${customer.state} - ${customer.pincode}</p>
+
+        <h3>Order</h3>
+        ${items.map(i => `<p>${i.name} x ${i.quantity} = ₹${i.price * i.quantity}</p>`).join("")}
+
+        <h3>Total: ₹${total_amount}</h3>
+      `
+    });
+
+    res.json({
+      success: true,
+      discount_code: "SKIN25NOW",
+      message: "Thanks for joining! 25% off will be sent when we launch 💖"
+    });
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false });
+  }
+});
+
